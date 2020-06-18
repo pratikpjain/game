@@ -9,6 +9,9 @@ function die() {
     var sc2 = Math.floor(Math.random() * 6) + 1;
     var p1 = document.getElementById('player1');
     var p2 = document.getElementById('player2');
+    var imgname = ['one.jpg' , 'two.jpg' , 'three.jpg' , 'four.jpg' , 'five.jpg' , 'six.jpg'];
+    document.querySelector('#player1').setAttribute('src' , imgname[sc1-1])
+    document.querySelector('#player2').setAttribute('src' , imgname[sc2-1])
     p1.innerText = sc1;
     p2.innerText = sc2;
     if(sc1 > sc2) {
