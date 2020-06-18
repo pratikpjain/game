@@ -14,22 +14,26 @@
     <div id="result" class="refresh">
         <h1>Click 'Throw' to Start the match</h1>
     </div>
-    <div class="game">
-        <div class="head">
-            <h3 id = "p1"></h3>
-            <h3 id = "p2"></h3>
-        </div>
-        <div class="dice">
-            <div id="player1">
-                0
-            </div>
-            <div id="player2">
-                0
-            </div>
-        </div>
-    </div>
-    <script src="index.js" type = ></script>
-    <button onclick="die()" class =  "btn" >Throw</button>
+    <table cellspacing = "0px" cellpadding = "0px">
+        <tr>
+            <th>
+                <h3 id="p1"></h3>
+            </th>
+            <th>
+                <h3 id="p2"></h3>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <img src = "all.jpg" id = "player1">
+            </td>
+            <td>
+                <img src = "all.jpg" id = "player2">
+            </td>
+        </tr>
+    </table>
+    <button onclick="die()" class="btn">Throw</button>
+    <script src="index.js" type=></script>
 </body>
 
 </html>
